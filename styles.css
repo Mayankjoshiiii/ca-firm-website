@@ -136,7 +136,7 @@ html.dark body::before {
   z-index: 10;
 }
 
-/* BALANCED TYPOGRAPHY */
+/* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--text-heading);
@@ -144,8 +144,20 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
-p, li, span, label, td, th {
+p, li, label, td, th {
   color: var(--text-main);
+}
+
+/* TOP ANNOUNCEMENT BANNER - ABSOLUTE PURE WHITE HIGH CONTRAST */
+.top-banner,
+.top-banner *,
+.top-banner span,
+.top-banner a,
+.top-banner i,
+.top-banner svg {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
 }
 
 /* Header Nav */
