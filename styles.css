@@ -1,0 +1,403 @@
+/* ==========================================================================
+   M/s Associated Chartered Accountants - Modern High-Contrast Stylesheet
+   Campus Era Inspired Design System & Balanced Light/Dark Themes
+   Phone/WhatsApp: +91 74043 17320
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap');
+
+:root {
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  
+  /* Light Mode Palette: Fresh, Soft & Balanced */
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-nav: rgba(255, 255, 255, 0.95);
+  --text-heading: #0f172a;
+  --text-main: #334155;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --brand-emerald: #047857;
+  --brand-blue: #0284c7;
+  --brand-saffron: #d97706;
+  --card-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+}
+
+html.dark {
+  /* Dark Mode Palette: Deep Obsidian & Glowing Accents */
+  --bg-page: #0a0a0c;
+  --bg-card: #141419;
+  --bg-nav: rgba(10, 10, 12, 0.95);
+  --text-heading: #fdfdfd;
+  --text-main: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #27272a;
+  --brand-emerald: #10b981;
+  --brand-blue: #38bdf8;
+  --brand-saffron: #fbbf24;
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.6;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* ==========================================================================
+   CAMPUS ERA SIGNATURE BACKGROUND GRID & RADIAL MASK
+   ========================================================================== */
+body::before {
+  content: "";
+  z-index: 0;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(to right, rgba(4, 120, 87, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(4, 120, 87, 0.08) 1px, transparent 1px);
+  background-size: 3.5rem 3.5rem;
+  position: fixed;
+  inset: 0;
+  -webkit-mask-image: radial-gradient(85% 65% at 50% 0%, #000 65%, transparent 100%);
+  mask-image: radial-gradient(85% 65% at 50% 0%, #000 65%, transparent 100%);
+}
+
+html.dark body::before {
+  background-image: 
+    linear-gradient(to right, rgba(16, 185, 129, 0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.16) 1px, transparent 1px);
+}
+
+/* Cursor Ambient Spotlight */
+.cursor-spotlight {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Campus Era Ambient Color Blobs */
+.campus-blob {
+  position: fixed;
+  border-radius: 9999px;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(90px);
+  opacity: 0.35;
+  animation: blobFloat 8s ease-in-out infinite alternate;
+}
+
+.campus-blob-emerald {
+  background: #047857;
+  width: 320px;
+  height: 320px;
+  top: 5%;
+  left: -80px;
+}
+
+.campus-blob-blue {
+  background: #0284c7;
+  width: 280px;
+  height: 280px;
+  top: 40%;
+  right: -70px;
+  animation-delay: -3s;
+}
+
+.campus-blob-gold {
+  background: #d97706;
+  width: 240px;
+  height: 240px;
+  bottom: 8%;
+  left: 8%;
+  animation-delay: -5s;
+}
+
+@keyframes blobFloat {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-24px) scale(1.08); }
+  100% { transform: translateY(12px) scale(0.96); }
+}
+
+.relative-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* BALANCED TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+p, li, span, label, td, th {
+  color: var(--text-main);
+}
+
+/* Header Nav */
+.ca-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--bg-nav);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* UI Cards */
+.ca-ui-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  box-shadow: var(--card-shadow);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.ca-ui-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--brand-emerald), var(--brand-blue), var(--brand-saffron));
+  opacity: 0.85;
+}
+
+.ca-ui-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-emerald);
+  box-shadow: 0 16px 32px -8px rgba(4, 120, 87, 0.12);
+}
+
+/* Buttons */
+.btn-emerald {
+  background-color: #047857 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 12px 26px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 16px rgba(4, 120, 87, 0.3);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-emerald *, .btn-emerald span, .btn-emerald svg, .btn-emerald i {
+  color: #ffffff !important;
+}
+
+.btn-emerald:hover {
+  background-color: #065f46 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(4, 120, 87, 0.45);
+}
+
+.btn-outline {
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-heading) !important;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 12px 26px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  border-color: var(--brand-emerald);
+  color: var(--brand-emerald) !important;
+  transform: translateY(-2px);
+}
+
+/* Theme Switcher Button */
+.theme-icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.theme-icon-btn:hover {
+  border-color: var(--brand-emerald);
+  transform: scale(1.1) rotate(15deg);
+}
+
+/* Floating WhatsApp Badge */
+.whatsapp-compact {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #25d366 !important;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.whatsapp-compact:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.65);
+}
+
+/* Dark Container Box */
+.bg-dark-container {
+  background-color: #0f172a !important;
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid #334155;
+}
+
+.bg-dark-container,
+.bg-dark-container h1,
+.bg-dark-container h2,
+.bg-dark-container h3,
+.bg-dark-container h4,
+.bg-dark-container p,
+.bg-dark-container span,
+.bg-dark-container label,
+.bg-dark-container select,
+.bg-dark-container option,
+.bg-dark-container li {
+  color: #ffffff !important;
+}
+
+/* Modal Window */
+.sop-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.sop-modal-content {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 28px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
+  animation: modalIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Table Styling */
+.rate-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.rate-table th {
+  background-color: var(--bg-page);
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--border-color);
+  color: var(--text-heading);
+}
+
+.rate-table td {
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-main);
+}
+
+.hidden { display: none !important; }
+.flex { display: flex !important; }
+
+/* Accordion */
+.faq-block {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.faq-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), padding 0.3s ease;
+}
+
+.faq-block.active {
+  border-color: var(--brand-emerald);
+}
+
+.faq-block.active .faq-body {
+  max-height: 300px;
+  padding: 16px 20px;
+}
+
+.faq-block.active .faq-chevron {
+  transform: rotate(180deg);
+  color: var(--brand-emerald) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
