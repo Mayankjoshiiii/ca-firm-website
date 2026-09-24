@@ -49,38 +49,38 @@
   <div class="campus-blob campus-blob-gold"></div>
 
   <!-- Top Contact & Utility Bar -->
-  <div class="top-banner bg-slate-900 text-slate-200 text-xs py-2.5 px-4 border-b border-slate-800 relative z-50">
+  <div class="top-banner bg-slate-900 text-slate-200 text-[11px] sm:text-xs py-1.5 sm:py-2.5 px-3 sm:px-4 border-b border-slate-800 relative z-50">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-      <div class="flex items-center space-x-6">
-        <a href="tel:7404317320" class="flex items-center gap-2 hover:text-amber-400 transition font-semibold">
+      <div class="flex items-center space-x-4 sm:space-x-6">
+        <a href="tel:7404317320" class="flex items-center gap-1.5 hover:text-amber-400 transition font-semibold">
           <i class="fa-solid fa-phone text-amber-500"></i> +91 7404317320
         </a>
-        <a href="mailto:dsbenda.com@gmail.com" class="flex items-center gap-2 hover:text-amber-400 transition font-semibold">
+        <a href="mailto:dsbenda.com@gmail.com" class="hidden xs:flex items-center gap-1.5 hover:text-amber-400 transition font-semibold">
           <i class="fa-solid fa-envelope text-amber-500"></i> dsbenda.com@gmail.com
         </a>
       </div>
-      <div class="flex items-center space-x-4 text-[11px]">
-        <span class="flex items-center gap-1.5 text-slate-300 font-semibold">
+      <div class="flex items-center space-x-3 text-[10px] sm:text-[11px]">
+        <span class="flex items-center gap-1 text-slate-300 font-semibold">
           <i class="fa-solid fa-location-dot text-amber-400"></i> India
         </span>
-        <span class="text-slate-600">|</span>
-        <span class="text-amber-400 font-bold tracking-wide">Affordable Tax, GST, TDS & Accounting Rates</span>
+        <span class="text-slate-600 hidden sm:inline">|</span>
+        <span class="text-amber-400 font-bold tracking-wide hidden sm:inline">Affordable Tax, GST, TDS & Accounting Rates</span>
       </div>
     </div>
   </div>
 
   <!-- Corporate Header -->
   <header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-0 min-h-[4rem] sm:h-20 flex items-center justify-between gap-2">
       
       <!-- Firm Brand Logo -->
-      <a href="#" class="flex items-center gap-3">
-        <div class="w-11 h-11 bg-slate-900 text-amber-400 font-black rounded-lg flex items-center justify-center text-xl shadow-md border border-slate-800">
+      <a href="#" class="flex items-center gap-2 sm:gap-3 shrink min-w-0">
+        <div class="w-9 h-9 sm:w-11 sm:h-11 bg-slate-900 text-amber-400 font-black rounded-lg flex items-center justify-center text-sm sm:text-xl shadow-md border border-slate-800 shrink-0">
           DSB
         </div>
-        <div>
-          <span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white block leading-tight">DS BENDA & ASSOCIATES</span>
-          <span class="text-[10px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block">TAX, AUDIT & BUSINESS CONSULTANCY</span>
+        <div class="min-w-0">
+          <span class="text-sm sm:text-lg md:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white block leading-tight truncate sm:whitespace-normal">DS BENDA & ASSOCIATES</span>
+          <span class="text-[9px] sm:text-[10px] font-bold tracking-wider text-slate-500 dark:text-slate-400 uppercase block leading-tight truncate sm:whitespace-normal">TAX, AUDIT & CONSULTANCY</span>
         </div>
       </a>
 
@@ -93,14 +93,16 @@
       </nav>
 
       <!-- Right Header Actions -->
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-2 sm:gap-4 shrink-0">
         <!-- Theme Toggle Button -->
-        <button id="theme-toggle-btn" class="theme-icon-btn" title="Toggle Light/Dark Theme">
-          <i data-lucide="moon" class="w-5 h-5 text-slate-700 dark:text-slate-200"></i>
+        <button id="theme-toggle-btn" class="theme-icon-btn p-1.5 sm:p-2" title="Toggle Light/Dark Theme">
+          <i data-lucide="moon" class="w-4 h-4 sm:w-5 sm:h-5 text-slate-700 dark:text-slate-200"></i>
         </button>
 
-        <a href="https://wa.me/917404317320?text=Namaste%20DS%20BENDA%20%26%20ASSOCIATES!%20I%20want%20to%20consult%20regarding%20tax/accounting%20services." target="_blank" class="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg transition shadow-md shadow-amber-500/20 text-xs sm:text-sm flex items-center gap-2">
-          <i class="fa-brands fa-whatsapp text-sm"></i> Book Consultation
+        <a href="https://wa.me/917404317320?text=Namaste%20DS%20BENDA%20%26%20ASSOCIATES!%20I%20want%20to%20consult%20regarding%20tax/accounting%20services." target="_blank" class="px-3 py-1.5 sm:px-5 sm:py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg transition shadow-md shadow-amber-500/20 text-xs sm:text-sm flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span class="hidden sm:inline">Book Consultation</span>
+          <span class="sm:hidden">Consult</span>
         </a>
       </div>
 
