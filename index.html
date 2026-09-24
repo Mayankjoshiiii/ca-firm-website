@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M/s Associated Chartered Accountants | Tax, Audit & Accounting</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DS BENDA & ASSOCIATES | Accounting, Tax & Audit Practice</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
   <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
-            heading: ['Outfit', 'sans-serif'],
-            body: ['Plus Jakarta Sans', 'sans-serif']
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            heading: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
           },
           colors: {
             brand: {
-              emerald: '#047857',
-              blue: '#0284c7',
-              saffron: '#d97706',
-              dark: '#0a0a0c'
+              gold: '#eab308',
+              navy: '#0f172a',
+              darkNavy: '#0a0f1d'
             }
           }
         }
@@ -32,665 +38,651 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   
-  <!-- Custom Campus Era Theme Stylesheet -->
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="antialiased selection:bg-emerald-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased font-sans transition-colors duration-200">
 
   <!-- CAMPUS ERA AMBIENT FLOATING BLOBS -->
   <div class="campus-blob campus-blob-emerald"></div>
   <div class="campus-blob campus-blob-blue"></div>
   <div class="campus-blob campus-blob-gold"></div>
 
-  <!-- Main Web Content Container -->
-  <div class="relative-content">
-
-    <!-- TOP ANNOUNCEMENT BANNER -->
-    <div class="top-banner bg-emerald-800 text-white text-xs py-2.5 px-4 text-center font-bold flex items-center justify-center gap-2">
-      <i data-lucide="shield-check" class="w-4 h-4 text-emerald-300"></i>
-      <span>FY 2026-27 Compliances Active • Direct Chartered Accountant Advisory</span>
-      <a href="tel:+917404317320" class="underline hover:text-emerald-200 ml-2 font-extrabold flex items-center gap-1">
-        <i data-lucide="phone" class="w-3.5 h-3.5"></i> +91 74043 17320
-      </a>
+  <!-- Top Contact & Utility Bar -->
+  <div class="top-banner bg-slate-900 text-slate-200 text-xs py-2.5 px-4 border-b border-slate-800 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-6">
+        <a href="tel:7404317320" class="flex items-center gap-2 hover:text-amber-400 transition font-semibold">
+          <i class="fa-solid fa-phone text-amber-500"></i> +91 7404317320
+        </a>
+        <a href="mailto:dsbenda.com@gmail.com" class="flex items-center gap-2 hover:text-amber-400 transition font-semibold">
+          <i class="fa-solid fa-envelope text-amber-500"></i> dsbenda.com@gmail.com
+        </a>
+      </div>
+      <div class="flex items-center space-x-4 text-[11px]">
+        <span class="flex items-center gap-1.5 text-slate-300 font-semibold">
+          <i class="fa-solid fa-location-dot text-amber-400"></i> India
+        </span>
+        <span class="text-slate-600">|</span>
+        <span class="text-amber-400 font-bold tracking-wide">Affordable Tax, GST, TDS & Accounting Rates</span>
+      </div>
     </div>
-
-    <!-- NAVIGATION HEADER -->
-    <header class="ca-nav sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-          
-          <!-- Firm Logo -->
-          <a href="#" class="flex items-center gap-3">
-            <div class="w-11 h-11 bg-slate-900 dark:bg-emerald-600 text-white rounded-xl flex items-center justify-center font-black text-xl shadow-md">
-              CA
-            </div>
-            <div>
-              <span class="font-black text-lg block leading-tight text-slate-900 dark:text-white">M/s Associated</span>
-              <span class="text-[10px] font-extrabold tracking-widest text-emerald-700 dark:text-emerald-400 uppercase">Chartered Accountants</span>
-            </div>
-          </a>
-
-          <!-- Navigation Links -->
-          <nav class="hidden md:flex items-center gap-8 text-sm font-extrabold text-slate-800 dark:text-slate-200">
-            <a href="#services" class="hover:text-emerald-600 transition">Practice Areas</a>
-            <a href="#rates" class="hover:text-emerald-600 transition">Rate Matrix</a>
-            <a href="#calculator" class="hover:text-emerald-600 transition">Fee Calculator</a>
-            <a href="#faq" class="hover:text-emerald-600 transition">FAQ</a>
-            <a href="#contact" class="hover:text-emerald-600 transition">Contact Us</a>
-          </nav>
-
-          <!-- Header Right Actions -->
-          <div class="flex items-center gap-3">
-            <!-- Theme Toggle Circular Button -->
-            <button id="theme-toggle-btn" class="theme-icon-btn" title="Toggle Light/Dark Theme">
-              <i data-lucide="moon" class="w-5 h-5 text-slate-700"></i>
-            </button>
-
-            <!-- WhatsApp Direct Button -->
-            <a href="https://wa.me/917404317320?text=Namaste%20CA%20Team!%20I%20need%20tax%20advisory/filing%20assistance." target="_blank" class="btn-emerald text-xs hidden sm:inline-flex">
-              <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Us
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="py-16 md:py-24 border-b border-slate-200 dark:border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/80 font-bold text-xs border border-emerald-200 dark:border-emerald-700 text-emerald-800 dark:text-emerald-300">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
-              <span>FY 2026-27 Compliances & Sec 44AB Tax Audit Active</span>
-            </div>
-
-            <h1 class="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white leading-tight">
-              Expert <span class="text-emerald-700 dark:text-emerald-400">Taxation, GST & Audit</span> Solutions
-            </h1>
-
-            <p class="text-base sm:text-lg font-medium text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
-              End-to-end Chartered Accountant practice standard operating procedures for Salaried Individuals, MSMEs, Firms & Corporations. High precision, zero compliance default guarantee.
-            </p>
-
-            <div class="flex flex-wrap items-center gap-4 pt-2">
-              <a href="https://wa.me/917404317320?text=Hi%20CA%20Team!%20I%20want%20to%20consult%20regarding%20accounting/taxation." target="_blank" class="btn-emerald text-sm">
-                <i data-lucide="message-circle" class="w-5 h-5"></i> Connect on WhatsApp (+91 74043 17320)
-              </a>
-              <a href="#calculator" class="btn-outline text-sm">
-                <i data-lucide="calculator" class="w-5 h-5 text-emerald-700 dark:text-emerald-400"></i> Instant Fee Calculator
-              </a>
-            </div>
-
-            <!-- Trust Metrics -->
-            <div class="pt-8 grid grid-cols-3 gap-6 border-t border-slate-200 dark:border-slate-800">
-              <div>
-                <p class="text-2xl font-black text-slate-900 dark:text-white">100%</p>
-                <p class="text-xs font-semibold text-slate-600 dark:text-slate-400">On-Time Filings</p>
-              </div>
-              <div>
-                <p class="text-2xl font-black text-emerald-700 dark:text-emerald-400">FY 26-27</p>
-                <p class="text-xs font-semibold text-slate-600 dark:text-slate-400">Updated Tax Laws</p>
-              </div>
-              <div>
-                <p class="text-2xl font-black text-blue-600 dark:text-blue-400">Direct CA</p>
-                <p class="text-xs font-semibold text-slate-600 dark:text-slate-400">Representation</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Hero Practice Summary Card -->
-          <div class="lg:col-span-5">
-            <div class="ca-ui-card p-8 space-y-6">
-              <div class="border-b border-slate-200 dark:border-slate-700 pb-4 flex justify-between items-center">
-                <div>
-                  <span class="text-xs font-extrabold text-emerald-700 dark:text-emerald-400 uppercase tracking-widest">SOP PRACTICE</span>
-                  <h3 class="text-xl font-extrabold text-slate-900 dark:text-white mt-1">Core Deliverables</h3>
-                </div>
-                <div class="w-10 h-10 rounded-full bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 flex items-center justify-center font-bold">
-                  <i data-lucide="file-check-2" class="w-5 h-5"></i>
-                </div>
-              </div>
-
-              <ul class="space-y-4 text-sm font-semibold text-slate-700 dark:text-slate-200">
-                <li class="flex items-start gap-3">
-                  <span class="w-5 h-5 rounded-full bg-emerald-700 text-white flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">1</span>
-                  <span>Accounting & BRS: Daily Tally/Zoho Entries, Stock Valuation & Balance Sheet</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="w-5 h-5 rounded-full bg-emerald-700 text-white flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">2</span>
-                  <span>Indirect Taxation: E-Way Bills, GSTR-1, 3B & 2B ITC Matching</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="w-5 h-5 rounded-full bg-emerald-700 text-white flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">3</span>
-                  <span>Direct Taxation: Salaried & Business ITR, Sec 44AD/44ADA, TDS 24Q/26Q</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="w-5 h-5 rounded-full bg-emerald-700 text-white flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">4</span>
-                  <span>Audit & Setup: Sec 44AB Tax Audit Form 3CD, MSME & Partnership</span>
-                </li>
-              </ul>
-
-              <div class="pt-2">
-                <a href="tel:+917404317320" class="btn-emerald w-full justify-center text-sm">
-                  <i data-lucide="phone-call" class="w-4 h-4"></i> Call CA Hotline: +91 74043 17320
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PRACTICE AREAS (4 CATEGORIES FROM MIND MAP SOP) -->
-    <section id="services" class="py-16 md:py-24 border-b border-slate-200 dark:border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <span class="px-3.5 py-1 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-extrabold uppercase tracking-widest border border-blue-200 dark:border-blue-800">
-            SOP Standard Matrix
-          </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
-            Comprehensive CA Practice Scope
-          </h2>
-          <p class="text-sm sm:text-base font-medium text-slate-600 dark:text-slate-300">
-            Click on any practice card below to inspect the complete operational deliverable checklist.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-          
-          <!-- Category 1: Accounting -->
-          <div class="ca-ui-card p-8 space-y-6 flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="flex justify-between items-start">
-                <div class="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center">
-                  <i data-lucide="book-open-check" class="w-6 h-6"></i>
-                </div>
-                <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold">
-                  Category 1
-                </span>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white">1. Accounting & Financial Reporting</h3>
-              <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
-                Voucher entry in Tally, Zoho Books, Busy, QuickBooks, petty cash management, monthly BRS, and final Balance Sheet compilation.
-              </p>
-              <ul class="space-y-2 text-xs font-semibold text-slate-700 dark:text-slate-200">
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Purchase/Sales & Cash Register Maintenance
-                </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Monthly Bank Reconciliation Statement (BRS)
-                </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> P&L, Balance Sheet & Sec 32 Depreciation
-                </li>
-              </ul>
-            </div>
-            <button onclick="openSopModal('accounting')" class="btn-outline w-full justify-center text-xs">
-              <i data-lucide="list-checks" class="w-4 h-4 text-emerald-600"></i> View Full Accounting SOP
-            </button>
-          </div>
-
-          <!-- Category 2: Indirect Taxation (GST) -->
-          <div class="ca-ui-card p-8 space-y-6 flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="flex justify-between items-start">
-                <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
-                  <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
-                </div>
-                <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold">
-                  Category 2
-                </span>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white">2. Indirect Taxation (GST Compliance)</h3>
-              <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
-                E-Way Bills, E-Invoicing, GSTR-1, GSTR-3B, GSTR-2B Input Tax Credit reconciliation, GSTR-9 Annual returns & Notice replies.
-              </p>
-              <ul class="space-y-2 text-xs font-semibold text-slate-700 dark:text-slate-200">
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Monthly GSTR-1 & GSTR-3B Filings
-                </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> GSTR-2B Input Tax Credit Matching
-                </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Annual Returns (GSTR-9 & 9C Audit)
-                </li>
-              </ul>
-            </div>
-            <button onclick="openSopModal('gst')" class="btn-outline w-full justify-center text-xs">
-              <i data-lucide="list-checks" class="w-4 h-4 text-emerald-600"></i> View Full GST SOP
-            </button>
-          </div>
-
-          <!-- Category 3: Direct Taxation -->
-          <div class="ca-ui-card p-8 space-y-6 flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="flex justify-between items-start">
-                <div class="w-12 h-12 rounded-2xl bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400 flex items-center justify-center">
-                  <i data-lucide="badge-percent" class="w-6 h-6"></i>
-                </div>
-                <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold">
-                  Category 3
-                </span>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white">3. Direct Taxation (Income Tax & TDS)</h3>
-              <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
-                Salaried & Business ITR-1 to ITR-4, Sec 44AD/44ADA Presumptive Tax, AIS/TIS reconciliation, Quarterly e-TDS 24Q/26Q & Form 16.
-              </p>
-              <ul class="space-y-2 text-xs font-semibold text-slate-700 dark:text-slate-200">
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Salaried & Business Income Tax Returns
-                </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Form 26AS, AIS & TIS Statement Matching
-                </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> e-TDS 24Q/26Q & Form 16 Generation
-                </li>
-              </ul>
-            </div>
-            <button onclick="openSopModal('direct_tax')" class="btn-outline w-full justify-center text-xs">
-              <i data-lucide="list-checks" class="w-4 h-4 text-emerald-600"></i> View Full Direct Tax SOP
-            </button>
-          </div>
-
-          <!-- Category 4: Audit & Business Setup -->
-          <div class="ca-ui-card p-8 space-y-6 flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="flex justify-between items-start">
-                <div class="w-12 h-12 rounded-2xl bg-purple-50 dark:bg-purple-950 text-purple-600 dark:text-purple-400 flex items-center justify-center">
-                  <i data-lucide="building-2" class="w-6 h-6"></i>
-                </div>
-                <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold">
-                  Category 4
-                </span>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white">4. Auditing & Statutory Business Setup</h3>
-              <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
-                Section 44AB Tax Audit Report (Form 3CD), Udyam MSME Registration, Partnership Deed drafting, PF, PAN/TAN, FSSAI & licenses.
-              </p>
-              <ul class="space-y-2 text-xs font-semibold text-slate-700 dark:text-slate-200">
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Tax Audit Report Form 3CA/3CB/3CD
-                </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Udyam MSME & Partnership Deed Setup
-                </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Statutory Licenses (FSSAI, PF, Aadhaar Link)
-                </li>
-              </ul>
-            </div>
-            <button onclick="openSopModal('audit_setup')" class="btn-outline w-full justify-center text-xs">
-              <i data-lucide="list-checks" class="w-4 h-4 text-emerald-600"></i> View Full Audit & Setup SOP
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- RATE MATRIX & MARKET FEES (FY 2026-27) -->
-    <section id="rates" class="py-16 md:py-24 border-b border-slate-200 dark:border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
-          <span class="px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-xs font-extrabold uppercase tracking-widest border border-emerald-200 dark:border-emerald-800">
-            Transparent Pricing
-          </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
-            Market Benchmark Rates (FY 2026-27)
-          </h2>
-          <p class="text-sm font-medium text-slate-600 dark:text-slate-300">
-            Standard market advisory and filing fee structures for quick reference.
-          </p>
-        </div>
-
-        <div class="ca-ui-card p-6 sm:p-8 overflow-x-auto">
-          <table class="rate-table">
-            <thead>
-              <tr>
-                <th class="text-slate-900 dark:text-white">Compliance Category</th>
-                <th class="text-slate-900 dark:text-white">Scope & Deliverables</th>
-                <th class="text-slate-900 dark:text-white">Standard Fee (INR)</th>
-                <th class="text-slate-900 dark:text-white">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="font-bold text-slate-900 dark:text-white">Salaried ITR (ITR-1 / ITR-2)</td>
-                <td class="text-slate-600 dark:text-slate-300">Form 16, AIS, TIS reconciliation & Tax Optimization</td>
-                <td class="font-bold text-emerald-700 dark:text-emerald-400">₹799 - ₹1,499</td>
-                <td>
-                  <a href="https://wa.me/917404317320?text=Hi%20CA!%20I%20want%20to%20file%20Salaried%20ITR." target="_blank" class="px-3.5 py-1.5 rounded-full bg-emerald-700 text-white text-xs font-bold hover:bg-emerald-800">
-                    File Now
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-bold text-slate-900 dark:text-white">Business / Professional ITR</td>
-                <td class="text-slate-600 dark:text-slate-300">Sec 44AD / 44ADA Presumptive Taxation & P&L Statement</td>
-                <td class="font-bold text-emerald-700 dark:text-emerald-400">₹1,999 - ₹3,499</td>
-                <td>
-                  <a href="https://wa.me/917404317320?text=Hi%20CA!%20I%20need%20Business%20ITR%20filing." target="_blank" class="px-3.5 py-1.5 rounded-full bg-emerald-700 text-white text-xs font-bold hover:bg-emerald-800">
-                    File Now
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-bold text-slate-900 dark:text-white">Monthly GST Filing Package</td>
-                <td class="text-slate-600 dark:text-slate-300">GSTR-1, GSTR-3B & GSTR-2B Input Tax Credit Matching</td>
-                <td class="font-bold text-emerald-700 dark:text-emerald-400">₹999 / month</td>
-                <td>
-                  <a href="https://wa.me/917404317320?text=Hi%20CA!%20Interested%20in%20Monthly%20GST%20Package." target="_blank" class="px-3.5 py-1.5 rounded-full bg-emerald-700 text-white text-xs font-bold hover:bg-emerald-800">
-                    Subscribe
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-bold text-slate-900 dark:text-white">Tax Audit u/s 44AB (Form 3CD)</td>
-                <td class="text-slate-600 dark:text-slate-300">Statutory Verification, Ledger Scrutiny & Form 3CD Audit Report</td>
-                <td class="font-bold text-emerald-700 dark:text-emerald-400">₹14,999+</td>
-                <td>
-                  <a href="https://wa.me/917404317320?text=Hi%20CA!%20I%20require%20Section%2044AB%20Tax%20Audit." target="_blank" class="px-3.5 py-1.5 rounded-full bg-emerald-700 text-white text-xs font-bold hover:bg-emerald-800">
-                    Inquire
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-bold text-slate-900 dark:text-white">Full Bookkeeping & BRS</td>
-                <td class="text-slate-600 dark:text-slate-300">Daily Vouchers in Tally/Zoho, BRS & Monthly Financial Statements</td>
-                <td class="font-bold text-emerald-700 dark:text-emerald-400">₹2,499 / month</td>
-                <td>
-                  <a href="https://wa.me/917404317320?text=Hi%20CA!%20I%20need%20Monthly%20Bookkeeping." target="_blank" class="px-3.5 py-1.5 rounded-full bg-emerald-700 text-white text-xs font-bold hover:bg-emerald-800">
-                    Get Started
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- INTERACTIVE FEE CALCULATOR -->
-    <section id="calculator" class="py-16 md:py-24 border-b border-slate-200 dark:border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-5 space-y-6">
-            <span class="px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-xs font-extrabold uppercase tracking-widest border border-emerald-200 dark:border-emerald-800">
-              Interactive Estimator
-            </span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
-              Instant Professional Fee Calculator
-            </h2>
-            <p class="text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
-              Select your required service and transaction volume to get an instant, transparent fee estimate. Send it directly to our CA team via WhatsApp!
-            </p>
-
-            <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-2">
-              <div class="flex items-center gap-2 text-xs font-bold text-slate-900 dark:text-white">
-                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i> 100% Transparent Fee Guarantee
-              </div>
-              <p class="text-xs font-medium text-slate-600 dark:text-slate-300">
-                No hidden costs. Includes complete filing support, portal upload & compliance receipt generation.
-              </p>
-            </div>
-          </div>
-
-          <!-- Calculator Form Box -->
-          <div class="lg:col-span-7">
-            <div class="bg-dark-container shadow-2xl space-y-6">
-              
-              <div class="flex justify-between items-center border-b border-slate-700 pb-4">
-                <h3 class="text-xl font-black text-white">Fee Quote Generator</h3>
-                <i data-lucide="calculator" class="w-6 h-6 text-emerald-400"></i>
-              </div>
-
-              <!-- Service Selection -->
-              <div class="space-y-2">
-                <label class="text-xs font-bold uppercase text-slate-300">Select Practice Service</label>
-                <select id="calc-service" class="w-full p-3.5 rounded-xl bg-slate-800 border border-slate-600 text-white font-bold text-sm focus:outline-none focus:border-emerald-400">
-                  <option value="itr_salaried">Salaried Income Tax Return (ITR-1 / ITR-2)</option>
-                  <option value="itr_business">Business / Professional ITR (Sec 44AD / 44ADA)</option>
-                  <option value="gst_monthly" selected>Monthly GST Filing (GSTR-1 & GSTR-3B)</option>
-                  <option value="tax_audit">Tax Audit u/s 44AB (Form 3CD)</option>
-                  <option value="bookkeeping">Monthly Accounting & BRS Package</option>
-                  <option value="business_setup">Business Setup (MSME / GST / Partnership)</option>
-                </select>
-              </div>
-
-              <!-- Volume Slider -->
-              <div class="space-y-3">
-                <div class="flex justify-between items-center">
-                  <label class="text-xs font-bold uppercase text-slate-300">Estimated Monthly Volume / Invoices</label>
-                  <span class="text-emerald-400 font-extrabold text-sm"><span id="calc-volume-val">150</span> Docs</span>
-                </div>
-                <input type="range" id="calc-volume" min="10" max="600" step="10" value="150" class="w-full accent-emerald-500 h-2 bg-slate-700 rounded-lg cursor-pointer">
-              </div>
-
-              <!-- Result Display -->
-              <div class="p-6 rounded-2xl bg-slate-800/90 border border-slate-700 space-y-2 text-center">
-                <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Estimated Professional Fee</p>
-                <p id="calc-result-amount" class="text-4xl font-black text-emerald-400">₹1,499</p>
-                <p id="calc-result-service" class="text-xs font-semibold text-slate-300">Monthly GST Filing (per month)</p>
-              </div>
-
-              <!-- WhatsApp CTA -->
-              <a id="calc-whatsapp-btn" href="#" target="_blank" class="btn-emerald w-full justify-center text-sm">
-                <i data-lucide="message-circle" class="w-5 h-5"></i> Send Quote to WhatsApp (+91 74043 17320)
-              </a>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FAQ SECTION -->
-    <section id="faq" class="py-16 md:py-24 border-b border-slate-200 dark:border-slate-800">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        
-        <div class="text-center space-y-4">
-          <span class="px-3.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-xs font-extrabold uppercase tracking-widest">
-            Client Assistance
-          </span>
-          <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Frequently Asked Questions</h2>
-        </div>
-
-        <div class="space-y-4">
-          
-          <div class="faq-block active">
-            <button class="faq-btn w-full p-5 text-left flex justify-between items-center font-bold text-sm text-slate-900 dark:text-white">
-              <span>What documents are required for filing Income Tax Return (ITR)?</span>
-              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 transition-transform duration-200"></i>
-            </button>
-            <div class="faq-body">
-              <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
-                For Salaried ITR: Form 16 from employer, Bank Statement (April to March), Aadhaar card, PAN card, investment proofs (LIC, PPF, Mutual Funds u/s 80C). For Business ITR: Sales/Purchase figures, bank statements, and stock details. We match everything with your Form 26AS, AIS, and TIS statements.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-block">
-            <button class="faq-btn w-full p-5 text-left flex justify-between items-center font-bold text-sm text-slate-900 dark:text-white">
-              <span>What is the mandatory threshold limit for Section 44AB Tax Audit?</span>
-              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 transition-transform duration-200"></i>
-            </button>
-            <div class="faq-body">
-              <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
-                Under Section 44AB of the Income Tax Act, Tax Audit is mandatory if turnover exceeds ₹1 Crore for business (or ₹10 Crore if digital transactions exceed 95%). For professionals under Sec 44ADA, the limit is ₹50 Lakhs (or ₹75 Lakhs under digital limits). Form 3CD audit report must be uploaded by the specified due date.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-block">
-            <button class="faq-btn w-full p-5 text-left flex justify-between items-center font-bold text-sm text-slate-900 dark:text-white">
-              <span>How do you handle GSTR-2B Input Tax Credit (ITC) reconciliation?</span>
-              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 transition-transform duration-200"></i>
-            </button>
-            <div class="faq-body">
-              <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
-                We perform line-item matching between your Purchase Register and GSTR-2B generated on the GST portal. Unmatched invoices are flagged to your vendors so that maximum legitimate Input Tax Credit (ITC) is claimed safely in GSTR-3B without receiving portal mismatch notices.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- DIRECT CONTACT & FORM -->
-    <section id="contact" class="py-16 md:py-24">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-5 space-y-6">
-            <span class="px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-xs font-extrabold uppercase tracking-widest border border-emerald-200 dark:border-emerald-800">
-              Direct Contact
-            </span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
-              Connect With Chartered Accountant
-            </h2>
-            <p class="text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
-              Have an Income Tax Notice, GST compliance query, or need full-service monthly bookkeeping? Contact us directly.
-            </p>
-
-            <div class="space-y-4">
-              <div class="flex items-center gap-4 p-4 rounded-xl ca-ui-card">
-                <div class="w-10 h-10 rounded-full bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
-                  <i data-lucide="phone" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-bold uppercase text-slate-500 dark:text-slate-400">Direct Phone / Call</p>
-                  <a href="tel:+917404317320" class="text-base font-bold text-slate-900 dark:text-white hover:text-emerald-600">+91 74043 17320</a>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-4 p-4 rounded-xl ca-ui-card">
-                <div class="w-10 h-10 rounded-full bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
-                  <i data-lucide="message-circle" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-bold uppercase text-slate-500 dark:text-slate-400">WhatsApp Chat</p>
-                  <a href="https://wa.me/917404317320" target="_blank" class="text-base font-bold text-emerald-700 dark:text-emerald-400 hover:underline">+91 74043 17320</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Form Box -->
-          <div class="lg:col-span-7">
-            <div class="ca-ui-card p-8 space-y-6">
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700 pb-4">
-                Schedule a Consultation
-              </h3>
-
-              <form id="lead-form" class="space-y-4">
-                <div class="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label class="block text-xs font-bold text-slate-700 dark:text-slate-200 uppercase mb-1">Your Full Name</label>
-                    <input type="text" id="lead-name" required placeholder="e.g. Rahul Sharma" class="w-full p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-emerald-600">
-                  </div>
-                  <div>
-                    <label class="block text-xs font-bold text-slate-700 dark:text-slate-200 uppercase mb-1">Mobile / WhatsApp No.</label>
-                    <input type="tel" id="lead-phone" required placeholder="e.g. 7404317320" value="7404317320" class="w-full p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-emerald-600">
-                  </div>
-                </div>
-
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 dark:text-slate-200 uppercase mb-1">Service Needed</label>
-                  <select id="lead-service" class="w-full p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-emerald-600">
-                    <option value="Income Tax Return Filing">Income Tax Return (ITR Filing)</option>
-                    <option value="GST Registration & Filing">GST Registration & Filing</option>
-                    <option value="Tax Audit u/s 44AB">Section 44AB Tax Audit</option>
-                    <option value="Bookkeeping & Balance Sheet">Bookkeeping & Balance Sheet</option>
-                    <option value="Business Setup & Registrations">Business Setup & Registrations</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 dark:text-slate-200 uppercase mb-1">Message / Note (Optional)</label>
-                  <textarea id="lead-message" rows="3" placeholder="Describe your query or turnover..." class="w-full p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-emerald-600"></textarea>
-                </div>
-
-                <button type="submit" class="btn-emerald w-full justify-center text-sm">
-                  <i data-lucide="send" class="w-4 h-4"></i> Submit & Open WhatsApp Chat
-                </button>
-              </form>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 text-white py-12 border-t border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div class="flex items-center justify-center gap-3">
-          <div class="w-9 h-9 bg-emerald-600 text-white rounded-lg flex items-center justify-center font-black">
-            CA
-          </div>
-          <span class="font-bold text-lg">M/s Associated Chartered Accountants</span>
-        </div>
-        <p class="text-xs font-medium text-slate-400">
-          Financial Year 2026-27 Compliances • Direct CA Consultation • Phone/WhatsApp: +91 74043 17320
-        </p>
-        <p class="text-[11px] text-slate-600">
-          © 2026 M/s Associated CA Practice. All Rights Reserved.
-        </p>
-      </div>
-    </footer>
-
   </div>
 
-  <!-- FLOATING COMPACT WHATSAPP BUTTON -->
-  <a href="https://wa.me/917404317320?text=Namaste%20CA%20Team!%20I%20need%20quick%20tax/accounting%20assistance." target="_blank" class="whatsapp-compact" title="Chat on WhatsApp (+91 74043 17320)">
-    <i data-lucide="message-circle" class="w-7 h-7"></i>
-  </a>
-
-  <!-- SOP DELIVERABLES MODAL -->
-  <div id="sop-modal" class="sop-modal-backdrop hidden">
-    <div class="sop-modal-content p-6 sm:p-8 space-y-6">
+  <!-- Corporate Header -->
+  <header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-700 pb-4">
-        <div>
-          <span id="sop-modal-badge" class="px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-xs font-bold">
-            Category SOP
-          </span>
-          <h3 id="sop-modal-title" class="text-xl font-bold text-slate-900 dark:text-white mt-2">
-            Practice Deliverables
-          </h3>
+      <!-- Firm Brand Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 bg-slate-900 text-amber-400 font-black rounded-lg flex items-center justify-center text-xl shadow-md border border-slate-800">
+          DSB
         </div>
-        <button onclick="closeSopModal()" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-white flex items-center justify-center font-bold hover:bg-slate-200">
-          ✕
+        <div>
+          <span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white block leading-tight">DS BENDA & ASSOCIATES</span>
+          <span class="text-[10px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block">TAX, AUDIT & BUSINESS CONSULTANCY</span>
+        </div>
+      </a>
+
+      <!-- Main Navigation -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700 dark:text-slate-200">
+        <a href="#about" class="hover:text-amber-500 transition">About Firm</a>
+        <a href="#services" class="hover:text-amber-500 transition">Rates & Practice Areas</a>
+        <a href="#retainer" class="hover:text-amber-500 transition">Monthly Packages</a>
+        <a href="#why-us" class="hover:text-amber-500 transition">Why Choose Us</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="flex items-center gap-4">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle-btn" class="theme-icon-btn" title="Toggle Light/Dark Theme">
+          <i data-lucide="moon" class="w-5 h-5 text-slate-700 dark:text-slate-200"></i>
         </button>
-      </div>
 
-      <div id="sop-modal-content" class="space-y-4">
-        <!-- Dynamically injected by JS -->
-      </div>
-
-      <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex justify-end">
-        <a href="https://wa.me/917404317320?text=Hi%20CA!%20I%20want%20to%20discuss%20the%20SOP%20deliverables." target="_blank" class="btn-emerald text-xs">
-          <i data-lucide="message-circle" class="w-4 h-4"></i> Discuss with CA on WhatsApp
+        <a href="https://wa.me/917404317320?text=Namaste%20DS%20BENDA%20%26%20ASSOCIATES!%20I%20want%20to%20consult%20regarding%20tax/accounting%20services." target="_blank" class="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg transition shadow-md shadow-amber-500/20 text-xs sm:text-sm flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-sm"></i> Book Consultation
         </a>
       </div>
 
     </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-slate-900 text-white relative overflow-hidden py-16 lg:py-24 border-b border-slate-800">
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 opacity-95"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Banner Headline -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="inline-block py-1 px-3.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold tracking-widest uppercase">
+            M/S DS BENDA & ASSOCIATES
+          </span>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
+            Budget-Friendly Accounting, Tax & GST Solutions
+          </h1>
+          
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            Market-aligned, economical professional pricing for Indian MSMEs, sole traders, and startups. Get daily bookkeeping, GST filings, TDS compliance, and Sec 44AB audits without overpaying.
+          </p>
+
+          <div class="pt-6 grid grid-cols-3 gap-6 border-t border-slate-800 max-w-xl">
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">₹1,200</div>
+              <div class="text-xs text-slate-400 font-medium uppercase mt-1">Starter Package / Mo</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">₹1,700</div>
+              <div class="text-xs text-slate-400 font-medium uppercase mt-1">GST Registration</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">₹800</div>
+              <div class="text-xs text-slate-400 font-medium uppercase mt-1">Udyam Registration</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultation Booking Form -->
+        <div class="lg:col-span-5" id="contact">
+          <div class="bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-2xl p-6 sm:p-8 shadow-2xl border border-slate-100 dark:border-slate-700">
+            <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white mb-1">Get Free Fee Quotation</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-300 mb-6">Call us at <strong class="text-amber-600 dark:text-amber-400">+91 7404317320</strong> or send details for an instant WhatsApp quote.</p>
+
+            <form id="lead-form" class="space-y-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-700 dark:text-slate-300 mb-1">Client Name / Business</label>
+                <input type="text" id="lead-name" placeholder="Your Name or Firm Name" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-700 dark:text-slate-300 mb-1">Contact Number</label>
+                <input type="tel" id="lead-phone" placeholder="+91 7404317320" value="7404317320" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-700 dark:text-slate-300 mb-1">Service Required</label>
+                <select id="lead-service" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
+                  <option value="Starter Monthly Package (₹1,200/m)">Starter Monthly Package (₹1,200/m)</option>
+                  <option value="MSME Growth Package (₹2,499/m)">MSME Growth Package (₹2,499/m)</option>
+                  <option value="Full Scope Package (₹7,600/m)">Full Scope Package (₹7,600/m)</option>
+                  <option value="New GST Registration (₹1,700)">New GST Registration (₹1,700)</option>
+                  <option value="Udyam (MSME) Registration (₹800)">Udyam (MSME) Registration (₹800)</option>
+                  <option value="Rent Agreement Drafting (₹500)">Rent Agreement Drafting (₹500)</option>
+                  <option value="Income Tax Return (ITR-1 to ITR-4 From ₹500)">Income Tax Return (ITR-1 to ITR-4 From ₹500)</option>
+                  <option value="Tax Audit (Sec 44AB) & Financial Statements">Tax Audit (Sec 44AB) & Financial Statements</option>
+                </select>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold rounded-lg transition shadow-md uppercase tracking-wider text-sm mt-2 flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Request Service Quote on WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Software Competency Bar -->
+  <div class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 py-6">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 mb-3">Supported Accounting Platforms & Tax Portals</p>
+      <div class="flex flex-wrap justify-center items-center gap-8 font-semibold text-slate-700 dark:text-slate-300 text-sm">
+        <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-amber-500"></i> Tally Prime</span>
+        <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-amber-500"></i> Zoho Books</span>
+        <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-amber-500"></i> Busy Software</span>
+        <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-amber-500"></i> QuickBooks</span>
+        <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-amber-500"></i> IT & GST Official Portals</span>
+      </div>
+    </div>
   </div>
+
+  <!-- Revised Practice Areas & Individual Work Rates -->
+  <section id="services" class="py-20 bg-slate-50 dark:bg-slate-950 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-amber-600 dark:text-amber-400 tracking-widest uppercase block mb-2">Updated Professional Fee Schedule</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Standard Work Rates</h2>
+        <p class="text-slate-600 dark:text-slate-300 text-sm mt-3">Individual task rates aligned to standard Indian market benchmarks for small businesses and individuals.</p>
+      </div>
+
+      <div class="space-y-12">
+
+        <!-- MODULE 1: ACCOUNTING & FINANCIAL REPORTING -->
+        <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden ca-ui-card">
+          <div class="bg-slate-900 px-6 py-4 text-white flex justify-between items-center flex-wrap gap-2">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-black flex items-center justify-center text-sm">1</span>
+              <h3 class="text-xl font-bold tracking-tight text-white">ACCOUNTING & FINANCIAL REPORTING</h3>
+            </div>
+            <span class="text-xs font-semibold bg-slate-800 text-amber-400 px-3 py-1 rounded-full border border-slate-700">Bookkeeping & Finalization</span>
+          </div>
+          
+          <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Transaction Recording -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400 border-b border-slate-100 dark:border-slate-800 pb-2">
+                TRANSACTION RECORDING & RECONCILIATIONS
+              </h4>
+              <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300">
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Purchase and Sales register verification & entry</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹800 / month</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Voucher recording (Tally Prime, Zoho, Busy, QuickBooks)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹1,000 / month</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Petty cash, imprest maintenance & expense entry</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹500 / month</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Monthly Bank Reconciliation Statements (BRS)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹500 / bank acc</span>
+                </li>
+                <li class="flex justify-between items-start gap-3">
+                  <span>• Ledger scrutinies (Debtors, Creditors, Loans)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹750 / review</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Financial Finalization -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400 border-b border-slate-100 dark:border-slate-800 pb-2">
+                STOCK & FINANCIAL FINALIZATION
+              </h4>
+              <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300">
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Inventory valuation & stock matching</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹1,000 / year</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Trial Balance preparation & balance extraction</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹1,000 / report</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Depreciation calculation (Companies Act vs IT Act Sec 32)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹750 / year</span>
+                </li>
+                <li class="flex justify-between items-start gap-3">
+                  <span>• Compiling Profit & Loss Account, Balance Sheet & Schedules</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹2,500 / year</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODULE 2: INDIRECT TAXATION (GST COMPLIANCE) -->
+        <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden ca-ui-card">
+          <div class="bg-slate-900 px-6 py-4 text-white flex justify-between items-center flex-wrap gap-2">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-black flex items-center justify-center text-sm">2</span>
+              <h3 class="text-xl font-bold tracking-tight text-white">INDIRECT TAXATION (GST COMPLIANCE)</h3>
+            </div>
+            <span class="text-xs font-semibold bg-slate-800 text-amber-400 px-3 py-1 rounded-full border border-slate-700">GST Registration & Filings</span>
+          </div>
+          
+          <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Invoicing & Setup -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400 border-b border-slate-100 dark:border-slate-800 pb-2">
+                INVOICING, SETUP & REGISTRATIONS
+              </h4>
+              <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300">
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2 bg-amber-50/50 dark:bg-amber-950/40 p-1.5 rounded">
+                  <span class="font-semibold text-slate-900 dark:text-white">• New GST Registration & ARN tracking</span>
+                  <span class="font-bold text-amber-800 dark:text-amber-300 text-xs whitespace-nowrap bg-amber-100 dark:bg-amber-950 px-2 py-1 rounded border border-amber-300 dark:border-amber-700">₹1,700 one-time</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• E-Way Bill generation & validity extension</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹300 / month</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• E-Invoicing validation & IRN QR-code check</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹750 one-time</span>
+                </li>
+                <li class="flex justify-between items-start gap-3">
+                  <span>• GST Amendments (Core & Non-Core)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹500 / update</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Periodic Filings & Notices -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400 border-b border-slate-100 dark:border-slate-800 pb-2">
+                PERIODIC FILINGS, AMENDMENTS & SCRUTINY
+              </h4>
+              <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300">
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• GSTR-1 & GSTR-3B filings with 2B ITC matching</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹800 / month</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Composition Scheme CMP-08 & GSTR-4</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹500 / quarter</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Annual GST Return (GSTR-9 & GSTR-9C)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹3,500 / year</span>
+                </li>
+                <li class="flex justify-between items-start gap-3">
+                  <span>• GST Departmental Notice Reply drafting</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹1,500 / response</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODULE 3: DIRECT TAXATION (INCOME TAX & TDS/TCS) -->
+        <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden ca-ui-card">
+          <div class="bg-slate-900 px-6 py-4 text-white flex justify-between items-center flex-wrap gap-2">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-black flex items-center justify-center text-sm">3</span>
+              <h3 class="text-xl font-bold tracking-tight text-white">DIRECT TAXATION (INCOME TAX & TDS/TCS)</h3>
+            </div>
+            <span class="text-xs font-semibold bg-slate-800 text-amber-400 px-3 py-1 rounded-full border border-slate-700">ITR & TRACES Filings</span>
+          </div>
+          
+          <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- TDS & TCS Compliance -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400 border-b border-slate-100 dark:border-slate-800 pb-2">
+                TDS & TCS COMPLIANCE
+              </h4>
+              <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300">
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Monthly TDS check & ITNS 281 challan creation</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹500 / month</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Quarterly e-TDS return filing (Form 24Q, 26Q, 27Q)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹1,000 / quarter</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• TRACES Form 16/16A generation</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹250 / certificate</span>
+                </li>
+                <li class="flex justify-between items-start gap-3">
+                  <span>• TDS Defaults correction return</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹1,000 / correction</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Income Tax Returns -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400 border-b border-slate-100 dark:border-slate-800 pb-2">
+                INCOME TAX RETURNS & ADVISORY
+              </h4>
+              <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300">
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Salaried Individual Return (ITR-1)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹500 / return</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Business / Professional Return (ITR-3, ITR-4 Presumptive)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹1,500 / return</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• AIS, TIS, and Form 26AS Matching</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹400 / review</span>
+                </li>
+                <li class="flex justify-between items-start gap-3">
+                  <span>• Rectification u/s 154 & Intimation Notices u/s 143(1)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹1,000 / notice</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODULE 4: AUDITING, ASSURANCE & BUSINESS SETUP -->
+        <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden ca-ui-card">
+          <div class="bg-slate-900 px-6 py-4 text-white flex justify-between items-center flex-wrap gap-2">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-black flex items-center justify-center text-sm">4</span>
+              <h3 class="text-xl font-bold tracking-tight text-white">AUDITING, ASSURANCE & BUSINESS SETUP</h3>
+            </div>
+            <span class="text-xs font-semibold bg-slate-800 text-amber-400 px-3 py-1 rounded-full border border-slate-700">Audit & Registration Rates</span>
+          </div>
+          
+          <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Audit & Assurance -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400 border-b border-slate-100 dark:border-slate-800 pb-2">
+                AUDIT & ASSURANCE
+              </h4>
+              <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300">
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <span>• Tax Audit u/s 44AB (Form 3CA/3CB and Form 3CD)</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹7,500 onwards</span>
+                </li>
+                <li class="flex justify-between items-start gap-3">
+                  <span>• GST Audit & Reconciliation Certification</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹5,000 onwards</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Business Setup & Specific Registrations -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400 border-b border-slate-100 dark:border-slate-800 pb-2">
+                BUSINESS SETUP, REGISTRATION & AGREEMENTS
+              </h4>
+              <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300">
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2 bg-amber-50/50 dark:bg-amber-950/40 p-1.5 rounded">
+                  <span class="font-semibold text-slate-900 dark:text-white">• New GST Registration</span>
+                  <span class="font-bold text-amber-800 dark:text-amber-300 text-xs whitespace-nowrap bg-amber-100 dark:bg-amber-950 px-2 py-1 rounded border border-amber-300 dark:border-amber-700">₹1,700 one-time</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2 bg-emerald-50/50 dark:bg-emerald-950/40 p-1.5 rounded">
+                  <span class="font-semibold text-slate-900 dark:text-white">• Udyam (MSME) Registration</span>
+                  <span class="font-bold text-emerald-800 dark:text-emerald-300 text-xs whitespace-nowrap bg-emerald-100 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-300 dark:border-emerald-700">₹800 one-time</span>
+                </li>
+                <li class="flex justify-between items-start gap-3 border-b border-slate-100 dark:border-slate-800 pb-2 bg-slate-100/70 dark:bg-slate-800/70 p-1.5 rounded">
+                  <span class="font-semibold text-slate-900 dark:text-white">• Commercial / Residential Rent Agreement Drafting</span>
+                  <span class="font-bold text-slate-900 dark:text-white text-xs whitespace-nowrap bg-white dark:bg-slate-900 px-2 py-1 rounded border border-slate-300 dark:border-slate-700">₹500 / document</span>
+                </li>
+                <li class="flex justify-between items-start gap-3">
+                  <span>• Partnership Deed Drafting & Registration</span>
+                  <span class="font-bold text-emerald-700 dark:text-emerald-400 text-xs whitespace-nowrap bg-emerald-50 dark:bg-emerald-950 px-2 py-1 rounded border border-emerald-200 dark:border-emerald-800">₹1,500 / deed</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Budget Retainer Plans -->
+  <section id="retainer" class="py-20 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-amber-600 dark:text-amber-400 tracking-widest uppercase block mb-2">Maximum Value Bundles</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Economical Monthly Retainer Packages</h2>
+        <p class="text-slate-600 dark:text-slate-300 text-sm mt-3">Combine monthly bookkeeping, GST filing, and TDS work into a single transparent monthly subscription.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Starter Plan -->
+        <div class="border border-slate-200 dark:border-slate-700 rounded-2xl p-8 bg-slate-50 dark:bg-slate-800/60 flex flex-col justify-between ca-ui-card">
+          <div>
+            <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-2">Micro Business / Trader / Freelancer</span>
+            <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white mb-2">Starter Package</h3>
+            <div class="text-3xl font-extrabold text-slate-900 dark:text-white mb-6">₹1,200 <span class="text-xs text-slate-500 dark:text-slate-400 font-normal">/ month</span></div>
+            
+            <ul class="space-y-3 text-xs text-slate-700 dark:text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Up to 100 entries/month (Tally/Busy/Zoho)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Monthly GSTR-1 & GSTR-3B filings</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Single Bank Account BRS Reconciliation</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Yearly ITR-1 or ITR-4 filing included</li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/917404317320?text=Namaste!%20I%20want%20to%20select%20the%20Starter%20Package%20(Rs.1,200/mo)." target="_blank" class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-lg text-center text-xs block transition">
+            Choose Starter Package (₹1,200)
+          </a>
+        </div>
+
+        <!-- MSME Growth Plan -->
+        <div class="border-2 border-amber-500 rounded-2xl p-8 bg-slate-900 text-white flex flex-col justify-between relative shadow-xl">
+          <span class="absolute -top-3.5 right-6 bg-amber-500 text-slate-950 font-black text-[10px] uppercase px-3 py-1 rounded-full">Most Popular</span>
+          <div>
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest block mb-2">Growing Enterprises</span>
+            <h3 class="text-2xl font-extrabold text-white mb-2">MSME Growth Package</h3>
+            <div class="text-3xl font-extrabold text-white mb-6">₹2,499 <span class="text-xs text-slate-400 font-normal">/ month</span></div>
+            
+            <ul class="space-y-3 text-xs text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Up to 300 entries/month</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Complete GSTR-1, 3B & GSTR-2B ITC Matching</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Quarterly e-TDS Returns (Form 26Q/24Q)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Multi-bank Reconciliation & Monthly MIS</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> E-Way Bill & E-Invoicing support</li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/917404317320?text=Namaste!%20I%20want%20to%20select%20the%20MSME%20Growth%20Package%20(Rs.2,499/mo)." target="_blank" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold rounded-lg text-center text-xs block transition">
+            Select Growth Package (₹2,499)
+          </a>
+        </div>
+
+        <!-- Full Scope Plan -->
+        <div class="border border-slate-200 dark:border-slate-700 rounded-2xl p-8 bg-slate-50 dark:bg-slate-800/60 flex flex-col justify-between ca-ui-card">
+          <div>
+            <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-2">High Volume / Audit Scope</span>
+            <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white mb-2">Full Scope Package</h3>
+            <div class="text-3xl font-extrabold text-slate-900 dark:text-white mb-6">₹7,600 <span class="text-xs text-slate-500 dark:text-slate-400 font-normal">/ month</span></div>
+            
+            <ul class="space-y-3 text-xs text-slate-700 dark:text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Up to 750 monthly transactional entries</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Complete GST, TDS, and Payroll Statutory Filings</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Section 44AB Tax Audit Preparation</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Department Notice Replies & Scrutiny Support</li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/917404317320?text=Namaste!%20I%20want%20to%20select%20the%20Full%20Scope%20Package%20(Rs.7,600/mo)." target="_blank" class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-lg text-center text-xs block transition">
+            Choose Full Scope Package (₹7,600)
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Firm Operating Standards -->
+  <section id="why-us" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold text-amber-400 tracking-widest uppercase block">OUR ADVANTAGE</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">High Quality Standards at Economical Fees</h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            We keep our operating overheads streamlined so that we can pass on direct cost savings to small businesses, freelancers, and growing firms across India.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-shield-halved text-amber-400 mt-1 text-base"></i>
+              <div>
+                <h4 class="font-bold text-white text-sm">Transparent Pricing</h4>
+                <p class="text-xs text-slate-400 mt-0.5">Clear upfront pricing with no hidden charges or unexpected end-of-year billing surprises.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-file-invoice text-amber-400 mt-1 text-base"></i>
+              <div>
+                <h4 class="font-bold text-white text-sm">ITC Optimization</h4>
+                <p class="text-xs text-slate-400 mt-0.5">Thorough GSTR-2B reconciliation to help you claim maximum eligible Input Tax Credit.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-scale-balanced text-amber-400 mt-1 text-base"></i>
+              <div>
+                <h4 class="font-bold text-white text-sm">Timely Statutory Compliance</h4>
+                <p class="text-xs text-slate-400 mt-0.5">Prevent late fees and interest penalties with structured filing deadlines.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-2xl space-y-6">
+            <h3 class="text-xl font-bold text-white border-b border-slate-700 pb-3">Key Statutory Filing Due Dates</h3>
+            
+            <div class="space-y-4">
+              <div class="flex justify-between items-center bg-slate-900/60 p-3.5 rounded-lg border border-slate-700/50">
+                <div>
+                  <span class="text-xs font-bold text-amber-400 block">Monthly 11th & 20th</span>
+                  <span class="text-xs text-slate-300">GST Returns (GSTR-1 & GSTR-3B)</span>
+                </div>
+                <span class="text-[11px] font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded">Monthly</span>
+              </div>
+
+              <div class="flex justify-between items-center bg-slate-900/60 p-3.5 rounded-lg border border-slate-700/50">
+                <div>
+                  <span class="text-xs font-bold text-amber-400 block">7th of Every Month</span>
+                  <span class="text-xs text-slate-300">TDS Payment Challan Deposit (ITNS 281)</span>
+                </div>
+                <span class="text-[11px] font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded">Monthly</span>
+              </div>
+
+              <div class="flex justify-between items-center bg-slate-900/60 p-3.5 rounded-lg border border-slate-700/50">
+                <div>
+                  <span class="text-xs font-bold text-amber-400 block">June 15 / Sept 15 / Dec 15 / Mar 15</span>
+                  <span class="text-xs text-slate-300">Advance Tax Installment Payments</span>
+                </div>
+                <span class="text-[11px] font-semibold bg-blue-500/20 text-blue-400 px-2.5 py-1 rounded">Quarterly</span>
+              </div>
+
+              <div class="flex justify-between items-center bg-slate-900/60 p-3.5 rounded-lg border border-slate-700/50">
+                <div>
+                  <span class="text-xs font-bold text-amber-400 block">30th September / 31st October</span>
+                  <span class="text-xs text-slate-300">Tax Audit Sec 44AB & Business Returns</span>
+                </div>
+                <span class="text-[11px] font-semibold bg-amber-500/20 text-amber-400 px-2.5 py-1 rounded">Annual</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Footer Directory -->
+  <footer class="bg-slate-950 text-slate-400 py-12 text-xs border-t border-slate-800 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+      
+      <div class="space-y-4">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-amber-500 text-slate-950 font-black rounded flex items-center justify-center text-sm">DSB</div>
+          <span class="text-white font-bold text-base">DS BENDA & ASSOCIATES</span>
+        </div>
+        <p class="text-slate-500 leading-relaxed">
+          Affordable professional practice specializing in accounting, GST filings, ITR returns, TDS compliance, and legal drafting.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-xs">Taxation & Auditing</h4>
+        <ul class="space-y-2 text-slate-400">
+          <li>Income Tax Returns (From ₹500)</li>
+          <li>Tax Audit under Section 44AB</li>
+          <li>GST Filings & Annual Return (GSTR-9)</li>
+          <li>TRACES Quarterly e-TDS Returns</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-xs">Registrations & Setup</h4>
+        <ul class="space-y-2 text-slate-400">
+          <li>New GST Registration (₹1,700)</li>
+          <li>Udyam / MSME Registration (₹800)</li>
+          <li>Rent Agreement Drafting (₹500)</li>
+          <li>Partnership Deed Drafting (₹1,500)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-xs">Firm Contact</h4>
+        <p class="text-slate-300 mb-2">
+          <a href="tel:7404317320" class="hover:text-amber-400 transition"><i class="fa-solid fa-phone text-amber-500 me-2"></i> +91 7404317320</a>
+        </p>
+        <p class="text-slate-300 mb-2">
+          <a href="mailto:dsbenda.com@gmail.com" class="hover:text-amber-400 transition"><i class="fa-solid fa-envelope text-amber-500 me-2"></i> dsbenda.com@gmail.com</a>
+        </p>
+        <p class="text-slate-400"><i class="fa-solid fa-location-dot text-amber-500 me-2"></i> India</p>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900 pt-6 text-center text-slate-600">
+      &copy; 2026 DS BENDA & ASSOCIATES. All rights reserved. Professional Tax & Accounting Practice.
+    </div>
+  </footer>
+
+  <!-- FLOATING COMPACT WHATSAPP BUTTON -->
+  <a href="https://wa.me/917404317320?text=Namaste%20DS%20BENDA%20%26%20ASSOCIATES!%20I%20need%20tax/accounting%20assistance." target="_blank" class="whatsapp-compact" title="Chat on WhatsApp (+91 7404317320)">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
 
   <!-- Custom Master JavaScript Engine -->
   <script src="app.js"></script>
